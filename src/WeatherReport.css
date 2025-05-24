@@ -1,0 +1,115 @@
+/* General styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #e0f7fa, #ffffff);
+  color: #333;
+}
+
+/* Container */
+.weather-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+/* Header */
+.weather-container h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #0077b6;
+}
+
+/* Input fields */
+.weather-container input[type="text"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 2px solid #b0bec5;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+/* Buttons */
+.weather-container button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  margin: 0.5rem 0.5rem 1rem 0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.weather-container .add-btn {
+  background-color: #b0bec5;
+  color: #000;
+}
+
+.weather-container .fetch-btn {
+  background-color: #0077b6;
+  color: #fff;
+}
+
+.weather-container .add-btn:hover {
+  background-color: #90a4ae;
+}
+
+.weather-container .fetch-btn:hover {
+  background-color: #005f8c;
+}
+
+/* Error message */
+.weather-container .error {
+  color: red;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+/* Weather card */
+.weather-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+  transition: transform 0.2s ease;
+}
+
+.weather-card:hover {
+  transform: scale(1.02);
+}
+
+.weather-card h2 {
+  font-size: 1.5rem;
+  color: #0077b6;
+  margin-bottom: 0.5rem;
+}
+
+.weather-card p {
+  margin: 0.25rem 0;
+  font-size: 1rem;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+  .weather-container {
+    padding: 1rem;
+  }
+
+  .weather-container h1 {
+    font-size: 2rem;
+  }
+
+  .weather-card h2 {
+    font-size: 1.25rem;
+  }
+
+  .weather-card p {
+    font-size: 0.95rem;
+  }
+}
